@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Registration</title>
+  </head>
+  <body>
+    <h1>User Registration</h1>
+    <form action="/user/register" method="POST" enctype="multipart/form-data">
+      <label for="username">Username:</label>
+      <input type="text" name="username" required /><br /><br />
+      <label for="email">Email:</label>
+      <input type="email" name="email" required /><br /><br />
+      <label for="avatar">Avatar (JPG/PNG only):</label>
+      <input
+        type="file"
+        name="avatar"
+        accept=".jpg, .png"
+        required
+      /><br /><br />
+      <input type="submit" value="Register" />
+    </form>
+  </body>
+</html>
