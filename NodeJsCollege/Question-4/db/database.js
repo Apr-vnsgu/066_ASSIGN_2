@@ -7,7 +7,7 @@ class database {
   async _connect() {
     try {
       await mongoose.connect(
-        `mongodb+srv://arya:arya1234@cluster0.5dbxggj.mongodb.net/UserQ4?retryWrites=true&w=majority`
+        `mongo_url`
       );
       console.log(`database connection successfull`);
     } catch (error) {
