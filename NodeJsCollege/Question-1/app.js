@@ -7,7 +7,7 @@ const path = require('path');
 const app = express();
 
 mongoose.connect(
-  'mongodb+srv://arya:arya1234@cluster0.5dbxggj.mongodb.net/UserRegis?retryWrites=true&w=majority',
+  'mongo_url',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
